@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --font-display: "Fraunces Variable"; --font-sans: "Manrope Variable"; }
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-cream text-ink font-sans antialiased; }
+  h1, h2, h3 { @apply font-display tracking-tight; }
+  ::selection { @apply bg-lime text-ink; }
+}
+
+@layer components {
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-semibold transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-leaf; }
+  .btn-primary { @apply btn bg-lime text-ink hover:bg-lime-300; }
+  .btn-dark { @apply btn bg-forest text-cream hover:bg-forest-600; }
+  .btn-ghost { @apply btn border border-ink/15 hover:bg-ink/5; }
+  .eyebrow { @apply inline-flex items-center gap-2 rounded-full border border-leaf/25 bg-mint-100 px-3 py-1 text-xs font-semibold uppercase tracking-[.14em] text-leaf; }
+  .eyebrow-dark { @apply inline-flex items-center gap-2 rounded-full border border-lime/30 bg-lime/10 px-3 py-1 text-xs font-semibold uppercase tracking-[.14em] text-lime; }
+  .section { @apply py-20 md:py-28; }
+  .h-section { @apply text-3xl md:text-5xl font-medium leading-[1.05]; }
+  .lead { @apply text-lg text-ink/70 leading-relaxed; }
+  .card { @apply rounded-3xl border border-ink/10 bg-white shadow-card; }
+  .grid-bg { background-image: radial-gradient(rgba(11,42,34,.12) 1px, transparent 1px); background-size: 22px 22px; }
+  .grid-bg-dark { background-image: radial-gradient(rgba(216,243,106,.12) 1px, transparent 1px); background-size: 22px 22px; }
+  .input { @apply w-full rounded-xl border border-ink/15 bg-white px-4 py-3 text-sm outline-none transition focus:border-leaf focus:ring-4 focus:ring-mint; }
+  .prose-gg p { @apply mb-5 leading-relaxed text-ink/80; }
+  .prose-gg h2 { @apply mt-10 mb-4 text-2xl font-medium; }
+  .prose-gg ul { @apply mb-5 list-disc pl-6 text-ink/80 space-y-2; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
