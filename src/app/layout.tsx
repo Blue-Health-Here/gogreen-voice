@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import "@fontsource-variable/fraunces";
-import "@fontsource-variable/manrope";
+import "@fontsource-variable/bricolage-grotesque";
+import "@fontsource-variable/inter";
 import "./globals.css";
 import { AnnouncementBar } from "@/components/AnnouncementBar";
 import { Header } from "@/components/Header";

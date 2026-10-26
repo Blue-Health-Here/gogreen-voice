@@ -6,13 +6,15 @@ import { workflows } from "@/lib/content";
 
 export const dynamicParams = false;
 export const generateStaticParams = () => workflows.map((w) => ({ slug: w.slug }));
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const w = workflows.find((x) => x.slug === params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const w = workflows.find((x) => x.slug === slug);
   return w ? { title: w.name, description: w.intro } : {};
 }
 
-export default function WorkflowPage({ params }: { params: { slug: string } }) {
-  const w = workflows.find((x) => x.slug === params.slug);
+export default async function WorkflowPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const w = workflows.find((x) => x.slug === slug);
   if (!w) notFound();
   return (
     <>

@@ -1,3 +1,6 @@
+import { postsA } from "./posts-a";
+import { postsB } from "./posts-b";
+
 // All site copy is original placeholder content for GoGreen Health.
 // Figures marked "illustrative" must be replaced with verified numbers before launch.
 
@@ -118,6 +121,7 @@ export const workflows: Workflow[] = [
 
 export type Audience = {
   slug: string;
+  href: string;
   name: string;
   short: string;
   headline: string;
@@ -130,6 +134,7 @@ export type Audience = {
 export const audiences: Audience[] = [
   {
     slug: "rcm-companies",
+    href: "/rcm-companies",
     name: "RCM companies",
     short: "Scale client work without scaling headcount",
     headline: "Take on more clients without adding more callers.",
@@ -139,6 +144,7 @@ export const audiences: Audience[] = [
   },
   {
     slug: "provider-groups",
+    href: "/provider-groups",
     name: "Provider groups",
     short: "Give front-office and billing staff their day back",
     headline: "Let your staff take care of patients instead of sitting on hold.",
@@ -148,6 +154,7 @@ export const audiences: Audience[] = [
   },
   {
     slug: "health-systems",
+    href: "/health-systems",
     name: "Health systems",
     short: "Enterprise-grade automation across departments",
     headline: "Payer calls handled across every department.",
@@ -157,6 +164,7 @@ export const audiences: Audience[] = [
   },
   {
     slug: "digital-health",
+    href: "/digital-health",
     name: "Digital health",
     short: "Insurance operations that scale with your growth",
     headline: "Insurance operations that keep up with your growth.",
@@ -165,8 +173,9 @@ export const audiences: Audience[] = [
     outcomes: [{ stat: "API", label: "first, with webhooks for every result" }, { stat: "Minutes", label: "from signup to verified coverage" }, { stat: "50+", label: "states supported (illustrative)" }],
   },
   {
-    slug: "dental-groups",
-    name: "Dental groups",
+    slug: "dental-dsos",
+    href: "/dental-dsos",
+    name: "Dental DSOs",
     short: "Breakdowns and frequencies, verified at scale",
     headline: "Full benefit breakdowns for every dental appointment.",
     intro: "Dental service organizations use GoGreen Voice to collect frequencies, waiting periods and history across many offices, so each appointment starts with accurate estimates.",
@@ -175,6 +184,7 @@ export const audiences: Audience[] = [
   },
   {
     slug: "payers",
+    href: "/platform/payers",
     name: "Payers",
     short: "Clean provider data and outbound outreach",
     headline: "Keep provider directories accurate.",
@@ -183,8 +193,9 @@ export const audiences: Audience[] = [
     outcomes: [{ stat: "Quarterly", label: "directory attestations, automated" }, { stat: "Full", label: "audit trail for regulators" }, { stat: "10×", label: "outreach capacity (illustrative)" }],
   },
   {
-    slug: "life-sciences",
-    name: "Life sciences",
+    slug: "pharma",
+    href: "/pharma",
+    name: "Pharma & life sciences",
     short: "Hub services and patient access support",
     headline: "Help patients start therapy sooner.",
     intro: "Pharma hubs and specialty pharmacies use GoGreen Voice for benefits investigations and auth follow-ups, so patients start therapy sooner.",
@@ -269,10 +280,65 @@ export const caseStudies: CaseStudy[] = [
     solution: "GoGreen Voice worked every aged claim regardless of balance and tagged each with a clear next step.",
     results: ["Backlog cleared in a quarter", "Faster appeals with captured denial codes", "Recovered revenue on small claims"],
   },
+  {
+    slug: "brightside-dental-partners",
+    org: "Brightside Dental Partners (sample)",
+    segment: "Dental DSO",
+    headline: "Full breakdowns for every appointment across 30 offices",
+    summary: "A dental service organization moved benefit checks off the front desk and onto one shared standard.",
+    metrics: [{ stat: "30", label: "offices on one process" }, { stat: "48 hrs", label: "verified before visits" }, { stat: "−60%", label: "front-desk call time" }],
+    challenge: "Each office verified benefits its own way, and portal data often left out frequencies, history and waiting periods.",
+    solution: "GoGreen Voice pulled the next two days of appointments from the PMS each night and called each dental plan for a full breakdown.",
+    results: ["Consistent breakdowns at every office", "More accurate treatment estimates", "Front desks focused on patients in the chair"],
+  },
+  {
+    slug: "northwind-virtual-care",
+    org: "Northwind Virtual Care (sample)",
+    segment: "Digital health",
+    headline: "Coverage confirmed in minutes at patient signup",
+    summary: "A virtual care company replaced a manual eligibility queue with API-triggered payer calls.",
+    metrics: [{ stat: "Minutes", label: "signup to verified" }, { stat: "0", label: "ops hires to scale" }, { stat: "40+", label: "states covered" }],
+    challenge: "Patients waited days for coverage checks, and the ops team grew every time marketing spend went up.",
+    solution: "Signup events triggered a GoGreen Voice call through the API whenever the clearinghouse response was incomplete, with results returned by webhook.",
+    results: ["Faster first appointments", "Ops headcount flat through growth", "Engineering out of the payer edge-case business"],
+  },
+  {
+    slug: "cascade-medical-supply",
+    org: "Cascade Medical Supply (sample)",
+    segment: "DME supplier",
+    headline: "DME authorizations tracked without a phone queue",
+    summary: "A durable medical equipment supplier automated auth status and coverage calls across national and regional plans.",
+    metrics: [{ stat: "75%", label: "of status calls automated" }, { stat: "−3 days", label: "order-to-delivery" }, { stat: "1.5 FTE", label: "redeployed" }],
+    challenge: "Orders sat waiting on authorization updates that could only be confirmed by phone.",
+    solution: "Agents called each plan daily on open orders and posted approvals, denials and missing documentation back to the order system.",
+    results: ["Fewer stalled orders", "Missing paperwork caught earlier", "Patients received equipment sooner"],
+  },
+  {
+    slug: "riverbend-billing-group",
+    org: "Riverbend Billing Group (sample)",
+    segment: "RCM company",
+    headline: "Timely filing write-offs nearly eliminated",
+    summary: "A billing company used claim status calls to catch problems before filing deadlines passed.",
+    metrics: [{ stat: "−90%", label: "timely filing write-offs" }, { stat: "5k", label: "claims checked / mo" }, { stat: "3 wks", label: "to go live" }],
+    challenge: "Claims that never reached the payer were only discovered after the filing window closed.",
+    solution: "Every claim without a response after 21 days got an automated status call, with no-record-on-file results flagged for same-day rebill.",
+    results: ["Lost claims caught early", "Cleaner aging reports", "Clients saw recovered revenue within a quarter"],
+  },
+  {
+    slug: "evergreen-ent-associates",
+    org: "Evergreen ENT Associates (sample)",
+    segment: "Specialty provider",
+    headline: "Credentialing follow-up handled while providers onboard",
+    summary: "A growing ENT group automated enrollment status calls for new providers across its payer list.",
+    metrics: [{ stat: "−35%", label: "time to in-network" }, { stat: "18", label: "payers tracked" }, { stat: "Weekly", label: "status for every app" }],
+    challenge: "New providers waited months to see patients because enrollment applications stalled without anyone noticing.",
+    solution: "GoGreen Voice called each payer weekly on open applications and flagged missing documents to the credentialing lead.",
+    results: ["New providers billing sooner", "No more silent stalls", "Credentialing lead freed for complex cases"],
+  },
 ];
 
 export type Post = { slug: string; title: string; excerpt: string; date: string; tag: string; read: string; body: string[] };
-export const posts: Post[] = [
+const basePosts: Post[] = [
   {
     slug: "peer-to-peer-scheduling",
     title: "Prior auth agents can now schedule peer-to-peer reviews",
@@ -350,6 +416,9 @@ export const posts: Post[] = [
     ],
   },
 ];
+
+// Newest first, so the blog index leads with the latest post.
+export const posts: Post[] = [...basePosts, ...postsA, ...postsB].sort((a, b) => b.date.localeCompare(a.date));
 
 export const press = [
   { date: "2026-10-01", outlet: "Company news", title: "GoGreen Health launches GoGreen Voice for revenue cycle teams", href: "/blog/peer-to-peer-scheduling" },

@@ -22,9 +22,9 @@ export default function Home() {
         <div className="absolute -left-40 top-20 h-96 w-96 rounded-full bg-mint/60 blur-3xl" />
         <div className="container relative grid items-center gap-12 pt-14 pb-20 md:pt-20 lg:grid-cols-[1.05fr_1fr]">
           <HeroIntro>
-            <HeroLine><span className="eyebrow"><span className="h-1.5 w-1.5 rounded-full bg-leaf animate-pulse" /> Voice AI for revenue cycle</span></HeroLine>
-            <HeroLine><h1 className="mt-6 text-5xl font-medium leading-[0.98] sm:text-6xl lg:text-7xl">
-              Let AI wait on hold <em className="not-italic text-leaf">for you</em>.
+            <HeroLine><span className="eyebrow"><span className="h-1.5 w-1.5 rounded-full bg-gl-green animate-pulse" /> Voice AI for revenue cycle</span></HeroLine>
+            <HeroLine><h1 className="mt-4 text-5xl font-medium leading-[0.9] tracking-[-.05em] sm:text-6xl lg:text-7xl">
+              Let AI wait on hold <span data-text="for you." className="ai-gradient-text">for you.</span>
             </h1></HeroLine>
             <HeroLine><p className="lead mt-6 max-w-xl">
               GoGreen Voice agents call payers for benefits, authorizations, claims and enrollment, then send structured answers back to your systems. Your team handles the exceptions.
@@ -98,7 +98,7 @@ export default function Home() {
       </section>
 
       {/* CALL DEMO */}
-      <section id="listen" className="section scroll-mt-20">
+      <section id="listen" className="section scroll-mt-28">
         <div className="container">
           <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
             <SectionHead eyebrow="Listen in" title="Hear an agent work a real-world call." intro="Choose a workflow and press play to watch the agent capture structured data as the call happens." />

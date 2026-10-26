@@ -6,13 +6,15 @@ import { specialties, workflows } from "@/lib/content";
 
 export const dynamicParams = false;
 export const generateStaticParams = () => specialties.map((s) => ({ slug: s.slug }));
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const s = specialties.find((x) => x.slug === params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const s = specialties.find((x) => x.slug === slug);
   return s ? { title: `${s.name} revenue cycle automation` } : {};
 }
 
-export default function SpecialtyPage({ params }: { params: { slug: string } }) {
-  const s = specialties.find((x) => x.slug === params.slug);
+export default async function SpecialtyPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const s = specialties.find((x) => x.slug === slug);
   if (!s) notFound();
   return (
     <>

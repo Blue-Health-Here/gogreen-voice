@@ -4,15 +4,15 @@ import { audiences, workflows } from "@/lib/content";
 import { Logo } from "./Logo";
 
 const cols = [
-  { title: "Platform", links: [{ label: "Overview", href: "/platform" }, { label: "Voice agents", href: "/voice-agents" }, { label: "Automation teams", href: "/solutions/automation-teams" }, { label: "Security", href: "/security" }, { label: "API docs", href: brand.docsUrl }] },
+  { title: "Platform", links: [{ label: "Overview", href: "/platform" }, { label: "Voice agents", href: "/voice-agents" }, { label: "Automation teams", href: "/solutions/rpa-automation-teams" }, { label: "Security", href: "/security" }, { label: "API docs", href: brand.docsUrl }] },
   { title: "Workflows", links: workflows.map((w) => ({ label: w.name, href: `/workflows/${w.slug}` })) },
-  { title: "Who we serve", links: audiences.map((a) => ({ label: a.name, href: `/who-we-serve/${a.slug}` })) },
-  { title: "Company", links: [{ label: "Case studies", href: "/case-studies" }, { label: "Blog", href: "/blog" }, { label: "Press", href: "/press" }, { label: "Careers", href: "/careers" }, { label: "Contact", href: "/demo" }] },
+  { title: "Who we serve", links: audiences.map((a) => ({ label: a.name, href: a.href })) },
+  { title: "Company", links: [{ label: "Case studies", href: "/case-studies" }, { label: "Blog", href: "/blog" }, { label: "Press", href: "/press" }, { label: "Claim status guide", href: "/references/claim-status-automation" }, { label: "Superbill template", href: "/free-superbill-template" }, { label: "Careers", href: "/careers" }, { label: "Contact", href: "/demo" }] },
 ];
 
 export function Footer() {
   return (
-    <footer className="bg-forest-900 text-cream">
+    <footer className="bg-forest text-cream">
       <div className="container py-16">
         <div className="grid gap-12 lg:grid-cols-[1.3fr_3fr]">
           <div>

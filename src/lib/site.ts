@@ -28,7 +28,8 @@ export const nav: NavGroup[] = [
         links: [
           { label: "Platform overview", href: "/platform", desc: "How calls, data and results fit together" },
           { label: "Voice agents", href: "/voice-agents", desc: "AI callers that work payer phone lines" },
-          { label: "For automation teams", href: "/solutions/automation-teams", desc: "API-first access for RPA and engineering" },
+          { label: "For payers", href: "/platform/payers", desc: "Provider outreach for health plan teams" },
+          { label: "For automation teams", href: "/solutions/rpa-automation-teams", desc: "API-first access for RPA and engineering" },
           { label: "Security & compliance", href: "/security", desc: "How we protect PHI" },
         ],
       },
@@ -36,7 +37,7 @@ export const nav: NavGroup[] = [
   },
   {
     label: "Who we serve",
-    columns: [{ title: "Organizations", links: audiences.map((a) => ({ label: a.name, href: `/who-we-serve/${a.slug}`, desc: a.short })) }],
+    columns: [{ title: "Organizations", links: audiences.map((a) => ({ label: a.name, href: a.href, desc: a.short })) }],
   },
   {
     label: "Specialties",
@@ -58,6 +59,13 @@ export const nav: NavGroup[] = [
           { label: "Blog", href: "/blog", desc: "Notes on RCM, payers and automation" },
           { label: "Press", href: "/press", desc: "News and announcements" },
           { label: "Careers", href: "/careers", desc: "Join the team" },
+        ],
+      },
+      {
+        title: "Guides & tools",
+        links: [
+          { label: "Claim status automation guide", href: "/references/claim-status-automation", desc: "How voice agents work claim status calls" },
+          { label: "Free superbill template", href: "/free-superbill-template", desc: "A printable template for out-of-network claims" },
         ],
       },
     ],

@@ -10,8 +10,8 @@ export function PageHero({ eyebrow, title, intro, children, dark = false }: { ey
       <div className="container relative pt-16 pb-16 md:pt-24 md:pb-20">
         <HeroIntro>
         <HeroLine><span className={dark ? "eyebrow-dark" : "eyebrow"}>{eyebrow}</span></HeroLine>
-        <HeroLine><h1 className="mt-5 max-w-4xl text-4xl font-medium leading-[1.02] sm:text-5xl md:text-6xl">{title}</h1></HeroLine>
-        <HeroLine><p className={`mt-6 max-w-2xl text-lg leading-relaxed ${dark ? "text-cream/75" : "text-ink/70"}`}>{intro}</p></HeroLine>
+        <HeroLine><h1 className="mt-3 max-w-4xl text-4xl font-medium leading-[0.95] tracking-[-.05em] sm:text-5xl md:text-6xl">{title}</h1></HeroLine>
+        <HeroLine><p className={`mt-6 max-w-2xl text-lg leading-relaxed ${dark ? "text-cream/75" : "text-gl-gray"}`}>{intro}</p></HeroLine>
         <HeroLine className="mt-8 flex flex-wrap gap-3">
           <Link href="/demo" className={dark ? "btn-primary" : "btn-dark"}>Book a demo <Arrow className="h-4 w-4" /></Link>
           <Link href="/platform" className={dark ? "btn border border-cream/25 text-cream hover:bg-cream/10" : "btn-ghost"}>See the platform</Link>
@@ -28,7 +28,7 @@ export function SectionHead({ eyebrow, title, intro, center = false, dark = fals
     <Reveal className={`max-w-3xl ${center ? "mx-auto text-center" : ""}`}>
       {eyebrow && <span className={dark ? "eyebrow-dark" : "eyebrow"}>{eyebrow}</span>}
       <h2 className="h-section mt-4">{title}</h2>
-      {intro && <p className={`mt-5 text-lg leading-relaxed ${dark ? "text-cream/70" : "text-ink/70"}`}>{intro}</p>}
+      {intro && <p className={`mt-5 text-lg leading-relaxed ${dark ? "text-cream/70" : "text-gl-gray"}`}>{intro}</p>}
     </Reveal>
   );
 }
@@ -78,7 +78,7 @@ export function Steps({ items }: { items: { title: string; body: string }[] }) {
     <Stagger as="ol" className="grid gap-4 md:grid-cols-3">
       {items.map((s, i) => (
         <StaggerItem as="li" key={s.title} className="relative rounded-3xl border border-ink/10 bg-white p-7">
-          <span className="font-display text-5xl text-lime [-webkit-text-stroke:1px_#1F7A55]">0{i + 1}</span>
+          <span className="font-display text-5xl text-transparent [-webkit-text-stroke:1px_#279149]">0{i + 1}</span>
           <h3 className="mt-4 text-xl font-medium">{s.title}</h3>
           <p className="mt-2 text-sm leading-relaxed text-ink/65">{s.body}</p>
         </StaggerItem>
@@ -103,7 +103,7 @@ export function CheckList({ items, dark = false }: { items: string[]; dark?: boo
 export function CaseCard({ c, i = 0 }: { c: CaseStudy; i?: number }) {
   return (
     <Reveal delay={i * 0.1} className="h-full">
-    <Link href={`/case-studies/${c.slug}`} className="group card flex h-full flex-col p-7 transition hover:-translate-y-1 hover:shadow-glow">
+    <Link href={`/case-study/${c.slug}`} className="group card flex h-full flex-col p-7 transition hover:-translate-y-1 hover:shadow-glow">
       <span className="text-xs font-semibold uppercase tracking-[.14em] text-leaf">{c.segment}</span>
       <h3 className="mt-3 text-2xl font-medium leading-tight">{c.headline}</h3>
       <p className="mt-3 text-sm text-ink/60">{c.org}</p>

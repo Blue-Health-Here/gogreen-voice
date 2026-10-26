@@ -6,13 +6,15 @@ import { caseStudies } from "@/lib/content";
 
 export const dynamicParams = false;
 export const generateStaticParams = () => caseStudies.map((c) => ({ slug: c.slug }));
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const c = caseStudies.find((x) => x.slug === params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const c = caseStudies.find((x) => x.slug === slug);
   return c ? { title: c.headline, description: c.summary } : {};
 }
 
-export default function CaseStudy({ params }: { params: { slug: string } }) {
-  const c = caseStudies.find((x) => x.slug === params.slug);
+export default async function CaseStudy({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const c = caseStudies.find((x) => x.slug === slug);
   if (!c) notFound();
   return (
     <>

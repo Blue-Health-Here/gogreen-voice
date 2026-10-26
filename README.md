@@ -12,8 +12,8 @@ npm run build && npm start
 ## Where to edit
 - `src/lib/site.ts`: brand name, URLs, announcement bar and navigation
 - `src/lib/content.ts`: all page copy (workflows, audiences, specialties, case studies, blog, press, careers and FAQ)
-- `tailwind.config.ts`: brand colors (`forest`, `leaf`, `mint`, `lime`, `cream`)
-- `src/app/globals.css`: fonts (self-hosted Fraunces + Manrope via @fontsource) and shared styles
+- `tailwind.config.ts`: brand colors, mapped to the Greenline palette (greenlinepriorauth.com). Token names (`forest`, `leaf`, `mint`, `lime`, `cream`) are kept; raw Greenline colors live under `gl-*`
+- `src/app/globals.css`: fonts (self-hosted Bricolage Grotesque + Inter via @fontsource, matching Greenline) and shared styles
 - `src/app/api/demo/route.ts`: connects the demo form to your CRM, email or Slack
 
 ## Before launch

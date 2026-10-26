@@ -28,8 +28,8 @@ export function Header() {
   useEffect(() => { document.body.style.overflow = mobile ? "hidden" : ""; }, [mobile]);
 
   return (
-    <header ref={ref} className={`sticky top-0 z-50 transition ${scrolled ? "bg-cream/90 backdrop-blur border-b border-ink/10" : "bg-cream"}`}>
-      <div className="container flex h-16 items-center justify-between gap-6">
+    <header ref={ref} className="sticky top-0 z-50 px-3 pt-3 sm:pt-5">
+      <div className={`mx-auto flex h-[60px] max-w-6xl items-center justify-between gap-6 rounded-[35px] border border-gl-border pl-5 pr-1.5 backdrop-blur-[25px] transition ${scrolled ? "bg-white/80 shadow-card" : "bg-white/60"}`}>
         <Logo />
         <nav className="hidden lg:flex items-center gap-1" aria-label="Main">
           {nav.map((g) => {
@@ -38,7 +38,7 @@ export function Header() {
             return (
               <div key={g.label} className="relative" onMouseEnter={() => setOpen(g.label)} onMouseLeave={() => setOpen(null)}>
                 <button
-                  className={`flex items-center gap-1 rounded-full px-3.5 py-2 text-sm font-medium transition ${isOpen ? "bg-ink/5" : "hover:bg-ink/5"}`}
+                  className={`flex items-center gap-1 rounded-full px-3.5 py-2 text-[15px] text-gl-navy transition ${isOpen ? "bg-mint-100" : "hover:bg-mint-100"}`}
                   aria-expanded={isOpen}
                   onClick={() => setOpen(isOpen ? null : g.label)}
                 >
@@ -70,17 +70,17 @@ export function Header() {
           })}
         </nav>
         <div className="hidden lg:flex items-center gap-2">
-          <a href={brand.appUrl} className="rounded-full px-4 py-2 text-sm font-medium hover:bg-ink/5">Sign in</a>
-          <Link href="/demo" className="btn-dark">Book a demo</Link>
+          <a href={brand.appUrl} className="rounded-full px-4 py-2 text-[15px] text-gl-navy hover:bg-mint-100">Sign in</a>
+          <Link href="/demo" className="btn-green h-[46px] px-7 text-[15px]">Book a demo</Link>
         </div>
-        <button className="lg:hidden rounded-full p-2 hover:bg-ink/5" aria-label="Open menu" onClick={() => setMobile(true)}>
+        <button className="lg:hidden mr-2 rounded-full p-2 text-gl-navy hover:bg-mint-100" aria-label="Open menu" onClick={() => setMobile(true)}>
           <Menu className="h-6 w-6" />
         </button>
       </div>
 
       {mobile && (
         <div className="fixed inset-0 z-50 bg-cream lg:hidden overflow-y-auto" role="dialog" aria-modal="true">
-          <div className="container flex h-16 items-center justify-between">
+          <div className="container flex h-20 items-center justify-between">
             <Logo />
             <button className="rounded-full p-2 hover:bg-ink/5" aria-label="Close menu" onClick={() => setMobile(false)}><X className="h-6 w-6" /></button>
           </div>

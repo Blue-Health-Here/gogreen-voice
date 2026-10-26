@@ -2,34 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-:root { --font-display: "Fraunces Variable"; --font-sans: "Manrope Variable"; }
+:root { --font-display: "Bricolage Grotesque Variable"; --font-sans: "Inter Variable"; }
 
 @layer base {
   html { scroll-behavior: smooth; }
   body { @apply bg-cream text-ink font-sans antialiased; }
-  h1, h2, h3 { @apply font-display tracking-tight; }
+  h1, h2, h3 { @apply font-display font-medium tracking-[-.04em]; }
   ::selection { @apply bg-lime text-ink; }
 }
 
 @layer components {
   .btn { @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-semibold transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-leaf; }
-  .btn-primary { @apply btn bg-lime text-ink hover:bg-lime-300; }
-  .btn-dark { @apply btn bg-forest text-cream hover:bg-forest-600; }
-  .btn-ghost { @apply btn border border-ink/15 hover:bg-ink/5; }
-  .eyebrow { @apply inline-flex items-center gap-2 rounded-full border border-leaf/25 bg-mint-100 px-3 py-1 text-xs font-semibold uppercase tracking-[.14em] text-leaf; }
-  .eyebrow-dark { @apply inline-flex items-center gap-2 rounded-full border border-lime/30 bg-lime/10 px-3 py-1 text-xs font-semibold uppercase tracking-[.14em] text-lime; }
+  /* Greenline pill button: green-medium to green-deep vertical gradient, white text. */
+  .btn-green { @apply btn text-white bg-gradient-to-b from-leaf to-forest-600 shadow-[0_8px_20px_-10px_rgba(14,104,44,.7)] hover:brightness-110; }
+  .btn-primary { @apply btn-green; }
+  .btn-dark { @apply btn-green; }
+  .btn-ghost { @apply btn border border-gl-border bg-white/60 text-ink hover:border-leaf hover:text-leaf; }
+  .eyebrow { @apply inline-flex items-center gap-2 text-base font-normal text-gl-gray; }
+  .eyebrow-dark { @apply inline-flex items-center gap-2 text-base font-normal text-white/60; }
   .section { @apply py-20 md:py-28; }
-  .h-section { @apply text-3xl md:text-5xl font-medium leading-[1.05]; }
-  .lead { @apply text-lg text-ink/70 leading-relaxed; }
-  .card { @apply rounded-3xl border border-ink/10 bg-white shadow-card; }
-  .grid-bg { background-image: radial-gradient(rgba(11,42,34,.12) 1px, transparent 1px); background-size: 22px 22px; }
-  .grid-bg-dark { background-image: radial-gradient(rgba(216,243,106,.12) 1px, transparent 1px); background-size: 22px 22px; }
-  .input { @apply w-full rounded-xl border border-ink/15 bg-white px-4 py-3 text-sm outline-none transition focus:border-leaf focus:ring-4 focus:ring-mint; }
+  .h-section { @apply text-3xl md:text-5xl font-medium leading-none tracking-[-.04em]; }
+  .lead { @apply text-lg text-gl-gray leading-relaxed; }
+  .card { @apply rounded-xl border border-gl-border bg-white; }
+  /* Soft lavender / peach / mint orb behind heroes, after the Greenline landing hero. */
+  .grid-bg { background-image: radial-gradient(40% 55% at 50% 30%, rgba(180,111,179,.14), transparent 70%), radial-gradient(30% 40% at 62% 55%, rgba(253,124,15,.08), transparent 70%), radial-gradient(35% 45% at 35% 50%, rgba(59,208,154,.12), transparent 70%); }
+  .grid-bg-dark { background-image: radial-gradient(45% 60% at 20% 80%, rgba(23,198,79,.18), transparent 60%), radial-gradient(40% 50% at 85% 10%, rgba(81,203,198,.12), transparent 60%); }
+  .input { @apply w-full rounded-xl border border-gl-border bg-white px-4 py-3 text-sm outline-none transition focus:border-leaf focus:ring-4 focus:ring-mint-100; }
+  /* Greenline "ai-gradient-text": black word with a rainbow sweep overlaid. Needs data-text equal to the content. */
+  .ai-gradient-text { @apply relative inline-block; }
+  .ai-gradient-text::after { content: attr(data-text); @apply pointer-events-none absolute inset-0 animate-sweep opacity-0; background: linear-gradient(270deg, #121212 0%, #0659F7 6%, #FBB726 21%, #FD7C0F 49%, #DD5E79 65%, #B46FB3 80%, #121212 100%); background-size: 300% 100%; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
   .prose-gg p { @apply mb-5 leading-relaxed text-ink/80; }
   .prose-gg h2 { @apply mt-10 mb-4 text-2xl font-medium; }
   .prose-gg ul { @apply mb-5 list-disc pl-6 text-ink/80 space-y-2; }
+  .prose-gg h3 { @apply mt-8 mb-3 text-xl font-medium; }
+  .prose-gg ol { @apply mb-5 list-decimal pl-6 text-ink/80 space-y-2; }
+  .prose-gg a { @apply font-semibold text-leaf underline-offset-4 hover:underline; }
+  .prose-gg h2, .prose-gg h3 { @apply scroll-mt-28; }
+  .prose-gg .not-prose { @apply mb-5; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+@media print {
+  body > :not(main) { display: none !important; }
 }
