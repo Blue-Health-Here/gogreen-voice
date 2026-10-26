@@ -34,6 +34,7 @@ export function LottieAnim({ name, loop = true, className, label }: { name: keyo
         autoplay={!reduce}
         onDOMLoaded={() => { if (reduce) lottie.current?.goToAndStop(loop ? 30 : 89, true); }}
         rendererSettings={{ preserveAspectRatio: "xMidYMid meet" }}
+        style={{ width: "100%", height: "100%" }}
       />
     </div>
   );

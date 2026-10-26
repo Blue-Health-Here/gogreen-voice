@@ -25,7 +25,7 @@ export function Logo({ dark = false }: { dark?: boolean }) {
     <Link href="/" className="flex items-center gap-2" aria-label={`${brand.name} home`}>
       <LogoMark />
       <span className={`text-[19px] font-semibold tracking-tight ${dark ? "text-white" : "text-ink"}`}>
-        GoGreen<span className={dark ? "text-lime" : "text-leaf"}> Voice</span>
+        GreenLine<span className={dark ? "text-lime" : "text-leaf"}> Voice</span>
       </span>
     </Link>
   );

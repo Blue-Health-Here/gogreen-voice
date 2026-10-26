@@ -5,7 +5,7 @@ import { faqs as defaultFaqs, integrations, type CaseStudy } from "@/lib/content
 
 export function PageHero({ eyebrow, title, intro, children, dark = false }: { eyebrow: string; title: string; intro: string; children?: React.ReactNode; dark?: boolean }) {
   return (
-    <section className={`relative overflow-hidden ${dark ? "bg-forest text-cream" : ""}`}>
+    <section className={`relative overflow-hidden ${dark ? "bg-forest text-cream -mt-[72px] pt-[72px] sm:-mt-20 sm:pt-20" : ""}`}>
       <div className={`absolute inset-0 ${dark ? "grid-bg-dark" : "grid-bg"} [mask-image:radial-gradient(ellipse_at_top,black,transparent_70%)]`} />
       <div className="container relative pt-16 pb-16 md:pt-24 md:pb-20">
         <HeroIntro>
