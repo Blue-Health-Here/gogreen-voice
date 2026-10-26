@@ -1,7 +1,7 @@
 import { postsA } from "./posts-a";
 import { postsB } from "./posts-b";
 
-// All site copy is original placeholder content for GoGreen Health.
+// All site copy is original placeholder content for GreenLine Health.
 // Figures marked "illustrative" must be replaced with verified numbers before launch.
 
 export type Workflow = {
@@ -24,7 +24,7 @@ export const workflows: Workflow[] = [
     short: "Eligibility, deductibles and coverage details",
     headline: "Know what's covered before the patient walks in.",
     intro:
-      "GoGreen Voice calls the payer, navigates the phone tree, and comes back with copays, deductibles, accumulators and visit limits, written straight into your system of record.",
+      "GreenLine Voice calls the payer, navigates the phone tree, and comes back with copays, deductibles, accumulators and visit limits, written straight into your system of record.",
     steps: [
       { title: "Send the request", body: "Push a patient and service list from your PM system, a CSV, or our API." },
       { title: "Agent places the call", body: "The agent authenticates with member details and works through the IVR and rep conversation." },
@@ -74,7 +74,7 @@ export const workflows: Workflow[] = [
     short: "Denials, underpayments and AR follow-up",
     headline: "Work every aged claim, not just the big ones.",
     intro:
-      "GoGreen Voice calls on unpaid and denied claims, captures denial reasons and next steps, and routes each result to the right worklist so your team spends time on resolution, not hold music.",
+      "GreenLine Voice calls on unpaid and denied claims, captures denial reasons and next steps, and routes each result to the right worklist so your team spends time on resolution, not hold music.",
     steps: [
       { title: "Pull aging AR", body: "Select claims by age, payer or balance, or let rules pick them automatically." },
       { title: "Agent calls the payer", body: "The agent asks for status, denial codes, check numbers and reprocessing options." },
@@ -138,7 +138,7 @@ export const audiences: Audience[] = [
     name: "RCM companies",
     short: "Scale client work without scaling headcount",
     headline: "Take on more clients without adding more callers.",
-    intro: "Revenue cycle firms use GoGreen Voice as an always-on calling team that plugs into each client's workflow and reports back in your format.",
+    intro: "Revenue cycle firms use GreenLine Voice as an always-on calling team that plugs into each client's workflow and reports back in your format.",
     pains: ["Margins shrink as payer hold times grow", "Hiring and training callers takes months", "Client SLAs leave no room for backlogs"],
     outcomes: [{ stat: "3×", label: "more calls per FTE (illustrative)" }, { stat: "24/7", label: "coverage across time zones" }, { stat: "<2 wks", label: "to onboard a new client" }],
   },
@@ -148,7 +148,7 @@ export const audiences: Audience[] = [
     name: "Provider groups",
     short: "Give front-office and billing staff their day back",
     headline: "Let your staff take care of patients instead of sitting on hold.",
-    intro: "Multi-location practices use GoGreen Voice to verify benefits, follow up on auths and work AR, so staff can focus on patients and complex cases.",
+    intro: "Multi-location practices use GreenLine Voice to verify benefits, follow up on auths and work AR, so staff can focus on patients and complex cases.",
     pains: ["Front-desk staff spend hours on payer calls", "Missed verifications lead to surprise bills", "AR ages while the team is short-staffed"],
     outcomes: [{ stat: "70%", label: "of routine calls automated (illustrative)" }, { stat: "Same day", label: "benefit checks before visits" }, { stat: "0", label: "new hires needed to scale" }],
   },
@@ -158,7 +158,7 @@ export const audiences: Audience[] = [
     name: "Health systems",
     short: "Enterprise-grade automation across departments",
     headline: "Payer calls handled across every department.",
-    intro: "Health systems deploy GoGreen Voice across patient access, utilization management and the central business office, with the governance, auditability and integrations enterprise IT expects.",
+    intro: "Health systems deploy GreenLine Voice across patient access, utilization management and the central business office, with the governance, auditability and integrations enterprise IT expects.",
     pains: ["Call volume varies widely by department", "Disconnected vendors for every workflow", "Strict security and audit requirements"],
     outcomes: [{ stat: "1", label: "platform for every payer call" }, { stat: "100%", label: "of calls recorded & auditable" }, { stat: "SSO", label: "role-based access built in" }],
   },
@@ -178,7 +178,7 @@ export const audiences: Audience[] = [
     name: "Dental DSOs",
     short: "Breakdowns and frequencies, verified at scale",
     headline: "Full benefit breakdowns for every dental appointment.",
-    intro: "Dental service organizations use GoGreen Voice to collect frequencies, waiting periods and history across many offices, so each appointment starts with accurate estimates.",
+    intro: "Dental service organizations use GreenLine Voice to collect frequencies, waiting periods and history across many offices, so each appointment starts with accurate estimates.",
     pains: ["Portals leave out frequency and history details", "Each office verifies benefits its own way", "Patients are surprised by uncovered procedures"],
     outcomes: [{ stat: "40+", label: "dental fields captured per call" }, { stat: "Every", label: "office on one standard" }, { stat: "48 hrs", label: "ahead of every appointment" }],
   },
@@ -188,7 +188,7 @@ export const audiences: Audience[] = [
     name: "Payers",
     short: "Clean provider data and outbound outreach",
     headline: "Keep provider directories accurate.",
-    intro: "Health plans use GoGreen Voice to verify provider directory data, confirm network participation and run compliant outbound outreach at scale.",
+    intro: "Health plans use GreenLine Voice to verify provider directory data, confirm network participation and run compliant outbound outreach at scale.",
     pains: ["Directory accuracy requirements keep tightening", "Manual outreach to providers is slow and costly", "Low response rates on fax and email"],
     outcomes: [{ stat: "Quarterly", label: "directory attestations, automated" }, { stat: "Full", label: "audit trail for regulators" }, { stat: "10×", label: "outreach capacity (illustrative)" }],
   },
@@ -198,7 +198,7 @@ export const audiences: Audience[] = [
     name: "Pharma & life sciences",
     short: "Hub services and patient access support",
     headline: "Help patients start therapy sooner.",
-    intro: "Pharma hubs and specialty pharmacies use GoGreen Voice for benefits investigations and auth follow-ups, so patients start therapy sooner.",
+    intro: "Pharma hubs and specialty pharmacies use GreenLine Voice for benefits investigations and auth follow-ups, so patients start therapy sooner.",
     pains: ["Benefits investigations delay therapy starts", "Hub staffing spikes around launches", "Inconsistent data from payer calls"],
     outcomes: [{ stat: "Faster", label: "time-to-therapy" }, { stat: "Elastic", label: "capacity for launches" }, { stat: "Structured", label: "results for every BI" }],
   },
@@ -244,7 +244,7 @@ export const caseStudies: CaseStudy[] = [
     summary: "A surgical neuromonitoring group automated authorization follow-ups across dozens of payers.",
     metrics: [{ stat: "82%", label: "of follow-ups automated" }, { stat: "6 hrs", label: "avg. turnaround" }, { stat: "2 FTE", label: "redeployed" }],
     challenge: "The team was tracking authorizations for same-week surgeries by phone, with frequent long holds and few spare hours to follow up.",
-    solution: "GoGreen Voice pulled open authorizations nightly, called each payer the next morning and posted results back to the scheduling worklist.",
+    solution: "GreenLine Voice pulled open authorizations nightly, called each payer the next morning and posted results back to the scheduling worklist.",
     results: ["Same-day visibility into pending auths", "Fewer rescheduled procedures", "Staff focused on peer-to-peer reviews"],
   },
   {
@@ -255,7 +255,7 @@ export const caseStudies: CaseStudy[] = [
     summary: "An RCM firm used voice agents as its AR follow-up team for new clients.",
     metrics: [{ stat: "12", label: "clients added" }, { stat: "3×", label: "calls per FTE" }, { stat: "38%", label: "faster AR resolution" }],
     challenge: "Client growth was limited by how quickly the firm could hire and train AR callers.",
-    solution: "Claim status calls were routed to GoGreen Voice, with results written back into each client's billing system.",
+    solution: "Claim status calls were routed to GreenLine Voice, with results written back into each client's billing system.",
     results: ["Growth no longer tied to headcount", "Consistent call notes across clients", "Higher client retention"],
   },
   {
@@ -277,7 +277,7 @@ export const caseStudies: CaseStudy[] = [
     summary: "A multi-site orthopedic practice worked through its denial backlog with voice agents.",
     metrics: [{ stat: "−54%", label: "AR > 90 days" }, { stat: "9k", label: "claims worked / mo" }, { stat: "4 wks", label: "to full rollout" }],
     challenge: "Low-balance denials were piling up because no one had time to call on them.",
-    solution: "GoGreen Voice worked every aged claim regardless of balance and tagged each with a clear next step.",
+    solution: "GreenLine Voice worked every aged claim regardless of balance and tagged each with a clear next step.",
     results: ["Backlog cleared in a quarter", "Faster appeals with captured denial codes", "Recovered revenue on small claims"],
   },
   {
@@ -288,7 +288,7 @@ export const caseStudies: CaseStudy[] = [
     summary: "A dental service organization moved benefit checks off the front desk and onto one shared standard.",
     metrics: [{ stat: "30", label: "offices on one process" }, { stat: "48 hrs", label: "verified before visits" }, { stat: "−60%", label: "front-desk call time" }],
     challenge: "Each office verified benefits its own way, and portal data often left out frequencies, history and waiting periods.",
-    solution: "GoGreen Voice pulled the next two days of appointments from the PMS each night and called each dental plan for a full breakdown.",
+    solution: "GreenLine Voice pulled the next two days of appointments from the PMS each night and called each dental plan for a full breakdown.",
     results: ["Consistent breakdowns at every office", "More accurate treatment estimates", "Front desks focused on patients in the chair"],
   },
   {
@@ -299,7 +299,7 @@ export const caseStudies: CaseStudy[] = [
     summary: "A virtual care company replaced a manual eligibility queue with API-triggered payer calls.",
     metrics: [{ stat: "Minutes", label: "signup to verified" }, { stat: "0", label: "ops hires to scale" }, { stat: "40+", label: "states covered" }],
     challenge: "Patients waited days for coverage checks, and the ops team grew every time marketing spend went up.",
-    solution: "Signup events triggered a GoGreen Voice call through the API whenever the clearinghouse response was incomplete, with results returned by webhook.",
+    solution: "Signup events triggered a GreenLine Voice call through the API whenever the clearinghouse response was incomplete, with results returned by webhook.",
     results: ["Faster first appointments", "Ops headcount flat through growth", "Engineering out of the payer edge-case business"],
   },
   {
@@ -332,7 +332,7 @@ export const caseStudies: CaseStudy[] = [
     summary: "A growing ENT group automated enrollment status calls for new providers across its payer list.",
     metrics: [{ stat: "−35%", label: "time to in-network" }, { stat: "18", label: "payers tracked" }, { stat: "Weekly", label: "status for every app" }],
     challenge: "New providers waited months to see patients because enrollment applications stalled without anyone noticing.",
-    solution: "GoGreen Voice called each payer weekly on open applications and flagged missing documents to the credentialing lead.",
+    solution: "GreenLine Voice called each payer weekly on open applications and flagged missing documents to the credentialing lead.",
     results: ["New providers billing sooner", "No more silent stalls", "Credentialing lead freed for complex cases"],
   },
 ];
@@ -347,7 +347,7 @@ const basePosts: Post[] = [
     tag: "Product",
     read: "3 min",
     body: [
-      "A request for a peer-to-peer review usually means another round of phone tag. Now, when a payer offers a peer-to-peer during an authorization follow-up, GoGreen Voice collects the available times and books one based on the ordering physician's calendar.",
+      "A request for a peer-to-peer review usually means another round of phone tag. Now, when a payer offers a peer-to-peer during an authorization follow-up, GreenLine Voice collects the available times and books one based on the ordering physician's calendar.",
       "The confirmed time, the reviewer's contact details and the case number appear on the authorization record, and the physician gets a calendar invite.",
       "Peer-to-peer scheduling is available today for all prior authorization customers.",
     ],
@@ -421,9 +421,9 @@ const basePosts: Post[] = [
 export const posts: Post[] = [...basePosts, ...postsA, ...postsB].sort((a, b) => b.date.localeCompare(a.date));
 
 export const press = [
-  { date: "2026-10-01", outlet: "Company news", title: "GoGreen Health launches GoGreen Voice for revenue cycle teams", href: "/blog/peer-to-peer-scheduling" },
-  { date: "2026-08-15", outlet: "Company news", title: "GoGreen Voice adds credentialing and enrollment workflows", href: "/workflows/credentialing-enrollment" },
-  { date: "2026-06-20", outlet: "Company news", title: "GoGreen Health completes independent security assessment", href: "/security" },
+  { date: "2026-10-01", outlet: "Company news", title: "GreenLine Health launches GreenLine Voice for revenue cycle teams", href: "/blog/peer-to-peer-scheduling" },
+  { date: "2026-08-15", outlet: "Company news", title: "GreenLine Voice adds credentialing and enrollment workflows", href: "/workflows/credentialing-enrollment" },
+  { date: "2026-06-20", outlet: "Company news", title: "GreenLine Health completes independent security assessment", href: "/security" },
 ];
 
 export const roles = [
@@ -438,7 +438,7 @@ export const faqs = [
   { q: "What happens when a call goes off-script?", a: "Agents handle transfers, call-backs and unexpected questions. If a call needs human judgment, it goes to a review queue with the full recording and transcript." },
   { q: "How do results get into our systems?", a: "Through a direct integration with your PM or EHR, our REST API and webhooks, or scheduled CSV and SFTP exports, depending on what your team prefers." },
   { q: "How long does it take to go live?", a: "Most teams start live calls within two to four weeks. Start with one workflow and add more once you see results." },
-  { q: "Is GoGreen Voice HIPAA compliant?", a: "We sign a BAA with every customer and encrypt PHI in transit and at rest. See our Security page for details." },
+  { q: "Is GreenLine Voice HIPAA compliant?", a: "We sign a BAA with every customer and encrypt PHI in transit and at rest. See our Security page for details." },
 ];
 
 export const integrations = [
