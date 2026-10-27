@@ -37,7 +37,7 @@ export default function Payers() {
       <PageHero
         eyebrow="For payers"
         title="Automate provider outreach for network and operations teams."
-        intro="Health plans use GreenLine Voice to reach provider offices by phone at scale: directory checks, network updates and document follow-ups, with every answer returned as structured data."
+        intro="Health plans use Greenline Voice to reach provider offices by phone at scale: directory checks, network updates and document follow-ups, with every answer returned as structured data."
       />
       <section className="section pt-0">
         <div className="container">
@@ -121,7 +121,7 @@ export default function Payers() {
           <SectionHead
             eyebrow="Same problem, other side"
             title="Different buyer, same phone-call problem."
-            intro="Providers wait on hold to reach payers, and payers struggle to reach providers. GreenLine Voice uses the same voice agents for both."
+            intro="Providers wait on hold to reach payers, and payers struggle to reach providers. Greenline Voice uses the same voice agents for both."
           />
           <div className="mt-12 grid gap-4 md:grid-cols-2">
             {[
@@ -170,7 +170,7 @@ export default function Payers() {
       </section>
       <CTA
         title="Update provider outreach without rebuilding your stack."
-        body="See GreenLine Voice run a directory or network outreach campaign in a 30-minute demo."
+        body="See Greenline Voice run a directory or network outreach campaign in a 30-minute demo."
       />
     </>
   );

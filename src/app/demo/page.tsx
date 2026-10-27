@@ -11,7 +11,7 @@ export default function Demo() {
         <div>
           <span className="eyebrow">Book a demo</span>
           <h1 className="mt-5 text-4xl font-medium leading-tight md:text-6xl">
-            See GreenLine Voice on your own workflows.
+            See Greenline Voice on your own workflows.
           </h1>
           <p className="lead mt-6">
             In 30 minutes, we&apos;ll walk through live calls, show where

@@ -4,7 +4,7 @@ import { Eye, Lock, Shield, Users, Doc, Bolt } from "@/components/Icons";
 
 export const metadata: Metadata = {
   title: "Security",
-  description: "How GreenLine Health protects PHI.",
+  description: "How Greenline Health protects PHI.",
 };
 
 export default function Security() {
@@ -13,7 +13,7 @@ export default function Security() {
       <PageHero
         eyebrow="Security center"
         title="Built to protect patient data."
-        intro="Security isn't an add-on at GreenLine Health. It's part of how we design, build and run the platform. Request our security package for full details."
+        intro="Security isn't an add-on at Greenline Health. It's part of how we design, build and run the platform. Request our security package for full details."
       />
       <section className="section pt-0">
         <div className="container">

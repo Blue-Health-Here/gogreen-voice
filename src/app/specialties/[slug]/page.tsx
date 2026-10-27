@@ -30,7 +30,7 @@ export default async function SpecialtyPage({
       <PageHero
         eyebrow={s.name}
         title={`Payer calls for ${s.name.toLowerCase()}, handled.`}
-        intro={`${s.name} practices deal with ${s.focus}. GreenLine Voice agents are trained on these details, so the right questions get asked on every call.`}
+        intro={`${s.name} practices deal with ${s.focus}. Greenline Voice agents are trained on these details, so the right questions get asked on every call.`}
       />
       <section className="section pt-0">
         <div className="container grid gap-4 md:grid-cols-3">

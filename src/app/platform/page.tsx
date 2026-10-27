@@ -36,7 +36,7 @@ export default function Platform() {
       <PageHero
         eyebrow="Platform"
         title="One workspace for calls, portals, and clean payer data."
-        intro="GreenLine Voice sits between your revenue cycle systems and every payer, combining voice calling, portal automation, EDI/API lookups and document capture, so your team gets a structured answer instead of another manual back-and-forth."
+        intro="Greenline Voice sits between your revenue cycle systems and every payer, combining voice calling, portal automation, EDI/API lookups and document capture, so your team gets a structured answer instead of another manual back-and-forth."
       >
         <div className="mt-14">
           <ProductMock />
@@ -82,7 +82,7 @@ export default function Platform() {
         <div className="container">
           <Reveal y={30} className="card mx-auto max-w-3xl p-8 md:p-12">
             <p className="text-xl font-medium leading-relaxed text-ink md:text-2xl">
-              &ldquo;GreenLine checks our payer portals and EDI feeds first, so
+              &ldquo;Greenline checks our payer portals and EDI feeds first, so
               our team only gets pulled onto a call when that&apos;s truly the
               only way to get an answer. We got hours back every week that
               used to disappear into hold music.&rdquo;
@@ -159,7 +159,7 @@ export default function Platform() {
           <SectionHead
             eyebrow="Why it's different"
             title="Not a generic bot, and not a single-channel tool."
-            intro="Every payer runs its own phone tree, its own scripts, its own portal quirks and its own exceptions. GreenLine Voice is built around those differences: it learns which path gets an answer fastest for each payer, runs the workflow, and returns the result with the evidence behind it."
+            intro="Every payer runs its own phone tree, its own scripts, its own portal quirks and its own exceptions. Greenline Voice is built around those differences: it learns which path gets an answer fastest for each payer, runs the workflow, and returns the result with the evidence behind it."
           />
           <Reveal delay={0.15}>
             <CheckList
@@ -184,7 +184,7 @@ export default function Platform() {
             <LottieAnim
               name="data-flow"
               className="h-28 sm:h-36"
-              label="Requests flow through a GreenLine agent and back as results"
+              label="Requests flow through a Greenline agent and back as results"
             />
           </div>
           <div className="mt-12">

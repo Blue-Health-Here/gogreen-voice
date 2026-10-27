@@ -91,7 +91,7 @@ export default function Home() {
             </HeroLine>
             <HeroLine>
               <p className="lead mt-6 max-w-xl">
-                GreenLine Voice agents call payers for benefits, authorizations,
+                Greenline Voice agents call payers for benefits, authorizations,
                 claims and enrollment, then send structured answers back to your
                 systems. Your team handles the exceptions.
               </p>
@@ -175,7 +175,7 @@ export default function Home() {
           <Reveal delay={0.15}>
             <p className="lead">
               Portals don&apos;t cover everything, so staff sit on hold for
-              basic answers. GreenLine Voice handles those calls end to end,
+              basic answers. Greenline Voice handles those calls end to end,
               from navigating phone trees to talking with reps and recording
               what they say, so your team only works the cases that need
               judgment.
@@ -201,7 +201,7 @@ export default function Home() {
             <LottieAnim
               name="data-flow"
               className="h-28 sm:h-40"
-              label="Requests flow from your systems through a GreenLine agent and back as structured results"
+              label="Requests flow from your systems through a Greenline agent and back as structured results"
             />
           </Reveal>
           <Stagger className="mt-14 grid gap-4 lg:grid-cols-3">

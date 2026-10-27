@@ -8,13 +8,13 @@ import { Footer } from "@/components/Footer";
 import { brand } from "@/lib/site";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.GreenLinehealth.com"),
+  metadataBase: new URL("https://www.greenlinepriorauth.com"),
   title: {
     default: `${brand.name} | ${brand.tagline}`,
     template: `%s | ${brand.name}`,
   },
   description:
-    "GreenLine Voice handles benefits verification, prior authorization, claim status and credentialing calls, and returns structured results to your systems.",
+    "Greenline Voice handles benefits verification, prior authorization, claim status and credentialing calls, and returns structured results to your systems.",
   openGraph: { siteName: brand.name, type: "website" },
 };
 

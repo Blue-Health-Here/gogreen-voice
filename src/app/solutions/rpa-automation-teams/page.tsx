@@ -14,7 +14,7 @@ const sample = `POST /v1/calls
   "payer_id": "PAYER_123",
   "member": { "id": "W442819003", "dob": "1986-03-14" },
   "services": ["99214"],
-  "webhook_url": "https://example.com/hooks/GreenLine"
+  "webhook_url": "https://example.com/hooks/Greenline"
 }`;
 
 export default function Automation() {
@@ -23,7 +23,7 @@ export default function Automation() {
       <PageHero
         eyebrow="For automation teams"
         title="Where your bots stop, our agents take over."
-        intro="RPA works well with portals, but phone calls are harder. Add GreenLine Voice to your automation stack with one API call."
+        intro="RPA works well with portals, but phone calls are harder. Add Greenline Voice to your automation stack with one API call."
       >
         <pre className="mt-12 overflow-x-auto rounded-3xl bg-forest-900 p-6 text-sm leading-relaxed text-lime">
           <code>{sample}</code>

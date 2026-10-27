@@ -1,11 +1,11 @@
 // Global brand + navigation config. Edit here to rebrand.
 export const brand = {
-  name: "GreenLine Voice",
-  product: "GreenLine Voice",
+  name: "Greenline Voice",
+  product: "Greenline Voice",
   tagline: "Voice AI agents for revenue cycle teams",
-  email: "hello@GreenLinehealth.com",
-  appUrl: "https://app.GreenLinehealth.com",
-  docsUrl: "https://docs.GreenLinehealth.com",
+  email: "pa@greenlinepriorauth.com",
+  appUrl: "https://app.priorauthsupport.ai",
+  docsUrl: "https://app.priorauthsupport.ai",
   linkedin: "https://www.linkedin.com/",
   announcement: {
     text: "New: Prior auth agents now handle peer-to-peer scheduling.",
@@ -55,7 +55,7 @@ export const nav: NavGroup[] = [
     columns: [
       {
         links: [
-          { label: "Case studies", href: "/case-studies", desc: "Results from teams using GreenLine Voice" },
+          { label: "Case studies", href: "/case-studies", desc: "Results from teams using Greenline Voice" },
           { label: "Blog", href: "/blog", desc: "Notes on RCM, payers and automation" },
           { label: "Press", href: "/press", desc: "News and announcements" },
           { label: "Careers", href: "/careers", desc: "Join the team" },

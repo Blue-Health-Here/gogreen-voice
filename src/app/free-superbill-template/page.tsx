@@ -189,7 +189,7 @@ export default function SuperbillTemplate() {
           <SectionHead
             eyebrow="After the superbill"
             title="Let AI handle the payer calls that come next."
-            intro="GreenLine Voice calls payers to check benefits, follow up on authorizations and track claims, then sends structured results back to your systems."
+            intro="Greenline Voice calls payers to check benefits, follow up on authorizations and track claims, then sends structured results back to your systems."
           />
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {workflows.map((w) => (

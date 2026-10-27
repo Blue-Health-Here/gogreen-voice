@@ -26,7 +26,7 @@ export default function VoiceAgents() {
         dark
         eyebrow="Voice agents"
         title="Agents that make the payer call for you."
-        intro="Plenty of payer answers still live behind a phone line, not a portal. GreenLine Voice agents place the call, work the IVR, hold as long as it takes, and come back with a structured answer, so your team is never the one on hold."
+        intro="Plenty of payer answers still live behind a phone line, not a portal. Greenline Voice agents place the call, work the IVR, hold as long as it takes, and come back with a structured answer, so your team is never the one on hold."
       >
         <div className="mt-14">
           <CallDemo items={workflows} />
@@ -39,7 +39,7 @@ export default function VoiceAgents() {
             center
             eyebrow="Why voice still matters"
             title="Some payer answers only live behind a phone line."
-            intro="Portals, EDI feeds and APIs cover a lot, but carve-outs, exceptions and payer-specific rules often only surface through an IVR or a live rep. GreenLine Voice places that call, follows the payer's own logic, and turns the conversation into a result your systems can use, so phone work becomes programmatic, repeatable and easy to audit instead of a one-off chore."
+            intro="Portals, EDI feeds and APIs cover a lot, but carve-outs, exceptions and payer-specific rules often only surface through an IVR or a live rep. Greenline Voice places that call, follows the payer's own logic, and turns the conversation into a result your systems can use, so phone work becomes programmatic, repeatable and easy to audit instead of a one-off chore."
           />
         </div>
       </section>
@@ -173,7 +173,7 @@ export default function VoiceAgents() {
           <SectionHead
             eyebrow="When it needs a human"
             title="Escalations arrive ready to act on, not as a mystery ticket."
-            intro="If a call needs judgment, is missing a required input, or hits a step only a person can clear, GreenLine Voice hands it off immediately with everything a reviewer needs."
+            intro="If a call needs judgment, is missing a required input, or hits a step only a person can clear, Greenline Voice hands it off immediately with everything a reviewer needs."
           />
           <CheckList
             items={[
@@ -246,7 +246,7 @@ export default function VoiceAgents() {
 
       <CTA
         title="Stop sending your team to the phone."
-        body="Send GreenLine Voice instead, and let your staff spend their time on the cases that actually need them."
+        body="Send Greenline Voice instead, and let your staff spend their time on the cases that actually need them."
       />
     </>
   );

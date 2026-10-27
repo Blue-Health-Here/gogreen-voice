@@ -15,7 +15,7 @@ const toc = [
   { id: "ivr", label: "How agents handle IVRs" },
   { id: "writeback", label: "Writing results back" },
   { id: "evaluate", label: "Evaluating vendors" },
-  { id: "GreenLine", label: "GreenLine Voice" },
+  { id: "Greenline", label: "Greenline Voice" },
   { id: "faq", label: "FAQ" },
 ];
 
@@ -271,9 +271,9 @@ export default function ClaimStatusReference() {
               </li>
             </ul>
 
-            <h2 id="GreenLine">Claim status automation with GreenLine Voice</h2>
+            <h2 id="Greenline">Claim status automation with Greenline Voice</h2>
             <p>
-              GreenLine Voice runs claim status calls with payer-specific
+              Greenline Voice runs claim status calls with payer-specific
               playbooks, records and transcribes every call, and returns
               structured results through integrations, API or file export. Calls
               that need judgment go to a review queue. See the{" "}
@@ -290,7 +290,7 @@ export default function ClaimStatusReference() {
       </section>
       <CTA
         title="Want to see a workflow like yours?"
-        body="Send us a sample of open claims and we'll show you what GreenLine Voice brings back."
+        body="Send us a sample of open claims and we'll show you what Greenline Voice brings back."
       />
     </>
   );

@@ -9,7 +9,7 @@ export default function CaseStudies() {
       <PageHero
         eyebrow="Case studies"
         title="Results from revenue cycle teams."
-        intro="How organizations use GreenLine Voice to cut hold time, reduce AR and grow without adding headcount."
+        intro="How organizations use Greenline Voice to cut hold time, reduce AR and grow without adding headcount."
       />
       <section className="section pt-0">
         <div className="container grid gap-4 md:grid-cols-2">

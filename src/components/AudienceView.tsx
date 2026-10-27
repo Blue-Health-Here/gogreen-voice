@@ -55,7 +55,7 @@ export function AudienceView({ slug }: { slug: string }) {
       <section className="section">
         <div className="container">
           <SectionHead
-            eyebrow="What GreenLine Voice handles"
+            eyebrow="What Greenline Voice handles"
             title="Automate the calls that take up the most time."
           />
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

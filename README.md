@@ -1,4 +1,4 @@
-# GreenLine Health marketing site
+# Greenline Health marketing site
 
 Next.js 14 (App Router), TypeScript and Tailwind CSS. All copy and visuals are original.
 

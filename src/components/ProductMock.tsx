@@ -53,7 +53,7 @@ export function ProductMock() {
         <span className="h-3 w-3 rounded-full bg-lime" />
         <span className="h-3 w-3 rounded-full bg-leaf-300" />
         <span className="ml-3 rounded-full bg-white px-3 py-1 font-mono text-[11px] text-ink/50">
-          app.GreenLinehealth.com/calls
+          app.priorauthsupport.ai/login
         </span>
         <span className="ml-auto flex items-center gap-1.5 text-[11px] font-semibold text-leaf">
           <span className="h-2 w-2 animate-pulse rounded-full bg-leaf" />

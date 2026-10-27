@@ -106,7 +106,7 @@ export function CallDemo({
             <div className="min-w-0 flex-1">
               <div className="flex items-center justify-between text-xs text-cream/60">
                 <span className="flex items-center gap-1.5">
-                  <Phone className="h-3.5 w-3.5" /> GreenLine agent → Payer line
+                  <Phone className="h-3.5 w-3.5" /> Greenline agent → Payer line
                 </span>
                 <span className="font-mono">
                   {fmt(t)} / {fmt(w.duration)}
@@ -153,7 +153,7 @@ export function CallDemo({
                   <span
                     className={`mb-0.5 block text-[10px] font-semibold uppercase tracking-wider ${l.who === "agent" ? "text-lime" : "text-cream/50"}`}
                   >
-                    {l.who === "agent" ? "GreenLine agent" : "Payer rep"}
+                    {l.who === "agent" ? "Greenline agent" : "Payer rep"}
                   </span>
                   {l.text}
                 </div>

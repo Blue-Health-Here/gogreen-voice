@@ -24,7 +24,7 @@ export const postsB: Post[] = [
       "- Check claim status regularly so suspended claims with outstanding ADRs never slip through the cracks.",
       "- Assemble records that tell a complete story: orders, signatures, progress notes, test results, and anything that supports medical necessity.",
       "- Track outcomes by contractor and service line so you can fix documentation patterns before they trigger TPE.",
-      "Much of the work here is status tracking, and that is where automation helps. GreenLine Voice can call payers and contractors to confirm whether a claim is suspended for documentation and what was requested, so your team spends its time on the records themselves rather than on hold.",
+      "Much of the work here is status tracking, and that is where automation helps. Greenline Voice can call payers and contractors to confirm whether a claim is suspended for documentation and what was requested, so your team spends its time on the records themselves rather than on hold.",
     ],
   },
   {
@@ -50,7 +50,7 @@ export const postsB: Post[] = [
       "The clinical parts, such as summarizing the patient's history, deciding whether criteria are met, and handling peer-to-peer conversations, still benefit from experienced staff and the surgeon's involvement. The goal of automation is to free those people from the parts of the job that are just waiting and checking.",
       "## A practical rollout",
       "Start by pulling your last few months of orthopedic denials and grouping them by root cause. If many trace back to missing auths or expired auths, focus on requirement checks and schedule reconciliation first. If many sit in pending status for too long, focus on status follow-up. Build payer-specific checklists for your highest-volume procedures, and make sure the clinical notes template prompts for conservative care details.",
-      "For the phone-heavy pieces, a voice agent such as GreenLine Voice can call payers to check auth requirements and follow up on pending requests, then write the results back to your work queue so coordinators can focus on the cases that need clinical attention.",
+      "For the phone-heavy pieces, a voice agent such as Greenline Voice can call payers to check auth requirements and follow up on pending requests, then write the results back to your work queue so coordinators can focus on the cases that need clinical attention.",
     ],
   },
   {
@@ -77,7 +77,7 @@ export const postsB: Post[] = [
       "When you believe a recoupment is wrong, act quickly. Gather the original claim, remittance, eligibility verification, and any authorization or records. If the issue is retroactive eligibility, find out whether the patient has other coverage you can bill. If it is coordination of benefits, confirm the order of benefits and rebill the correct primary. If it is an audit finding, follow the payer's formal appeal process and meet every deadline.",
       "## Preventing the next one",
       "Many recoupments trace back to eligibility and coordination of benefits. Verifying coverage close to the date of service, and asking patients about other insurance at every visit, prevents a large share of them. Tracking recoupments by payer and reason also reveals patterns worth raising with your payer representative.",
-      "When you need to understand an offset, a call to the payer is often the fastest route. GreenLine Voice can make those calls to identify which claim an offset relates to and why, giving your team what it needs to dispute or rebill.",
+      "When you need to understand an offset, a call to the payer is often the fastest route. Greenline Voice can make those calls to identify which claim an offset relates to and why, giving your team what it needs to dispute or rebill.",
     ],
   },
   {
@@ -105,7 +105,7 @@ export const postsB: Post[] = [
       "If the denial is upheld, ask about next steps: whether a formal appeal is available, what the deadline is, and whether an expedited appeal is an option for urgent cases.",
       "## Making peer-to-peer a repeatable process",
       "Track peer-to-peer outcomes by payer, service, and denial reason. Patterns tell you where documentation templates need work and where criteria are routinely misunderstood. Some practices find that a large share of their peer-to-peer reversals stem from documentation that existed in the chart but was not included in the original submission, which points to a fixable intake problem.",
-      "Scheduling the call itself is often a phone-tree exercise. GreenLine Voice can handle the administrative calls around a denial, such as confirming the peer-to-peer window and scheduling details, so the clinician's time goes only to the conversation that matters.",
+      "Scheduling the call itself is often a phone-tree exercise. Greenline Voice can handle the administrative calls around a denial, such as confirming the peer-to-peer window and scheduling details, so the clinician's time goes only to the conversation that matters.",
     ],
   },
   {
@@ -133,7 +133,7 @@ export const postsB: Post[] = [
       "An approved auth is only useful if it matches the claim. Before the service, confirm nothing has changed: a different procedure, a new location, or a rescheduled date can all invalidate the approval. After the service, make sure the authorization number appears on the claim. If the procedure changed, contact the payer about updating the authorization; some allow it within a limited window after the service.",
       "## Measure and improve",
       "Track denial rates related to authorization by payer and service line, along with average turnaround time and the number of services delayed or rescheduled because of auth. Review the data monthly. The patterns will point you to which payers need more lead time, which templates need more clinical detail, and where your team is spending time on low-value work.",
-      "Much of that low-value work is phone follow-up. GreenLine Voice can take on routine auth requirement checks and status calls, leaving your specialists with the cases that need judgment.",
+      "Much of that low-value work is phone follow-up. Greenline Voice can take on routine auth requirement checks and status calls, leaving your specialists with the cases that need judgment.",
     ],
   },
   {
@@ -160,7 +160,7 @@ export const postsB: Post[] = [
       "## Step 6: Deliver the service and bill correctly",
       "Before the service, confirm the approval still matches what will be done, where, and when. Afterward, include the authorization number on the claim. If anything changed, such as a different code or an extra level, contact the payer promptly; some allow retroactive updates within a short window, and many do not.",
       "## Where the process breaks down",
-      "Most problems come from timing and handoffs. Requirements get identified too late, documentation is incomplete, follow-up is inconsistent, or the approval details never reach billing. Building clear ownership for each step, and a single place to track every request, fixes much of this. Automating the repetitive steps, such as requirement checks and status follow-up, frees staff for the steps that need clinical judgment. GreenLine Voice is built for that phone-based follow-up, calling payers to check status and recording the outcome for your team.",
+      "Most problems come from timing and handoffs. Requirements get identified too late, documentation is incomplete, follow-up is inconsistent, or the approval details never reach billing. Building clear ownership for each step, and a single place to track every request, fixes much of this. Automating the repetitive steps, such as requirement checks and status follow-up, frees staff for the steps that need clinical judgment. Greenline Voice is built for that phone-based follow-up, calling payers to check status and recording the outcome for your team.",
     ],
   },
   {
@@ -187,7 +187,7 @@ export const postsB: Post[] = [
       "If a payer consistently misses deadlines, document the pattern with claim numbers, receipt dates, and payment dates. Many state insurance departments accept provider complaints, and a documented pattern carries more weight than a single example.",
       "## Keeping claims clean in the first place",
       "Prompt pay protections only apply to clean claims. Eligibility verification, correct coding, accurate demographic data, and attached documentation when required all help ensure that your claims qualify. When a payer says a claim is not clean, ask exactly what is missing and fix it quickly, because the clock usually restarts with the corrected submission.",
-      "Confirming receipt and status on aging claims is routine phone work. GreenLine Voice can make those claim status calls at scale, so your team knows which overdue claims are truly late and worth escalating.",
+      "Confirming receipt and status on aging claims is routine phone work. Greenline Voice can make those claim status calls at scale, so your team knows which overdue claims are truly late and worth escalating.",
     ],
   },
   {
@@ -216,7 +216,7 @@ export const postsB: Post[] = [
       "- Primary denies saying another plan is primary: confirm the order with the patient and both payers, then rebill.",
       "- Patient's coordination of benefits record is outdated: many payers require the patient to update it directly, so prompt the patient to call.",
       "- Timely filing: secondary claims have their own filing limits, which may start from the primary's payment date or the date of service, depending on the payer.",
-      "Verifying coverage and order of benefits often takes a call to each payer. GreenLine Voice can make those calls to confirm active coverage and coordination of benefits details before the visit, reducing rework on the back end.",
+      "Verifying coverage and order of benefits often takes a call to each payer. Greenline Voice can make those calls to confirm active coverage and coordination of benefits details before the visit, reducing rework on the back end.",
     ],
   },
   {
@@ -240,7 +240,7 @@ export const postsB: Post[] = [
       "The practices that succeed out of network tend to do a few things well. They verify each patient's out-of-network benefits before the first visit, including deductible, coinsurance, and any authorization requirements. They provide superbills promptly, or submit claims on the patient's behalf. They give clear estimates and, for self-pay patients, comply with federal Good Faith Estimate requirements. And they make it easy for patients to understand what they will pay and what they can expect back from their plan.",
       "## A hybrid approach",
       "Out of network does not have to be all or nothing. Some practices stay in network with one or two payers that pay fairly and have a large share of their patients, and remain out of network with the rest. Others offer a sliding scale or a limited number of in-network slots. Review payer mix, rates, and administrative cost by payer to see where participation actually makes sense.",
-      "Whatever you choose, accurate benefits information is the foundation. GreenLine Voice can call payers to verify out-of-network benefits before the first visit, so patients know what to expect and your team is not chasing the details by phone.",
+      "Whatever you choose, accurate benefits information is the foundation. Greenline Voice can call payers to verify out-of-network benefits before the first visit, so patients know what to expect and your team is not chasing the details by phone.",
     ],
   },
   {
@@ -272,7 +272,7 @@ export const postsB: Post[] = [
       "The No Surprises Act limits balance billing in certain situations, mainly emergency services and some non-emergency services at in-network facilities. It also requires providers to give Good Faith Estimates to uninsured and self-pay patients. If a patient is choosing not to use their insurance, the Good Faith Estimate rules apply. These protections do not eliminate out-of-network care, but they change how and when it can be billed.",
       "## Setting expectations",
       "The best out-of-network practices explain costs before the first visit, in writing, using verified benefits. They provide superbills promptly and help patients follow up when claims stall. Clear expectations reduce disputes and improve retention.",
-      "Benefits verification is the step that makes everything else possible, and it usually requires a call. GreenLine Voice can make those verification calls and return structured out-of-network benefit details to your team.",
+      "Benefits verification is the step that makes everything else possible, and it usually requires a call. Greenline Voice can make those verification calls and return structured out-of-network benefit details to your team.",
     ],
   },
   {
@@ -299,7 +299,7 @@ export const postsB: Post[] = [
       "Most practice management systems now offer estimate templates. Use them, but review the output to make sure it reflects how you actually work.",
       "## What about insured clients using out-of-network benefits",
       "The Good Faith Estimate rules for uninsured and self-pay patients are in effect. Parts of the law that would require estimates to be sent to insurers for insured patients have been subject to delayed implementation. For clients using out-of-network benefits, it is still good practice to verify their benefits and explain expected costs in writing, even where the law does not yet mandate a specific format.",
-      "Verifying out-of-network mental health benefits is a common first step for new clients. GreenLine Voice can call payers to confirm those benefits, giving your team accurate information to share with clients before the first session.",
+      "Verifying out-of-network mental health benefits is a common first step for new clients. Greenline Voice can call payers to confirm those benefits, giving your team accurate information to share with clients before the first session.",
     ],
   },
   {
@@ -326,7 +326,7 @@ export const postsB: Post[] = [
       "Check claim status on unpaid claims well before the deadline. If the payer has no record of a claim, you still have time to resubmit. Keep proof of timely filing, such as clearinghouse acceptance reports or payer acknowledgment, because it can overturn a timely filing denial if the payer lost or delayed the claim.",
       "## When a timely filing denial arrives",
       "Review it right away. If you have proof that the claim was filed on time, such as an acceptance report or a prior payer reference number, appeal with that evidence. If the claim was originally sent to another payer in good faith, some payers will consider that in an appeal. If none of these apply, the balance usually cannot be billed to the patient when the provider is in network, so it becomes a write-off. Track these write-offs by root cause and fix the process that led to them.",
-      "Regular status checks are the single best defense against silent claim loss. GreenLine Voice can call payers to confirm receipt and status on aging claims, so problems are found while there is still time to fix them.",
+      "Regular status checks are the single best defense against silent claim loss. Greenline Voice can call payers to confirm receipt and status on aging claims, so problems are found while there is still time to fix them.",
     ],
   },
   {
@@ -356,7 +356,7 @@ export const postsB: Post[] = [
       "ERAs can be posted automatically to your practice management system, which saves time and reduces posting errors. More importantly, they are a rich source of data. By analyzing adjustment codes across many remittances, you can see which payers deny which services and why, spot underpayments by comparing allowed amounts to contracted rates, and catch recoupments that would otherwise quietly reduce your deposits.",
       "## Common problems",
       "ERAs sometimes arrive without a matching payment, or payments arrive without an ERA, which makes reconciliation difficult. Enroll for both ERA and EFT with each payer and make sure the enrollment details match. When an adjustment code is unclear or seems wrong, contact the payer for clarification and note the reference number.",
-      "Those clarification calls are a good fit for automation. GreenLine Voice can call payers about confusing adjustments or missing remittances and return the explanation to your team for follow-up.",
+      "Those clarification calls are a good fit for automation. Greenline Voice can call payers about confusing adjustments or missing remittances and return the explanation to your team for follow-up.",
     ],
   },
   {
@@ -386,7 +386,7 @@ export const postsB: Post[] = [
       "Generate superbills automatically from your practice management system, ideally monthly or after each visit. Double-check codes before sending. Explain the process to new patients so they know what to expect, including the fact that reimbursement goes to them, not the practice. Some practices also verify each patient's out-of-network benefits up front and share an estimate of expected reimbursement, which sets realistic expectations and builds trust.",
       "## Superbills and the No Surprises Act",
       "If a patient is not using insurance for a service, federal Good Faith Estimate requirements may apply. A patient who intends to submit superbills for reimbursement is still using their coverage in a sense, so clarify with each patient how they plan to pay and follow the applicable rules.",
-      "Verifying a new patient's out-of-network benefits usually takes a call to the payer. GreenLine Voice can handle those calls and return the benefit details your team needs to give patients a realistic estimate.",
+      "Verifying a new patient's out-of-network benefits usually takes a call to the payer. Greenline Voice can handle those calls and return the benefit details your team needs to give patients a realistic estimate.",
     ],
   },
   {
@@ -411,7 +411,7 @@ export const postsB: Post[] = [
       "When you find a discrepancy, contact the payer with the claim details and your contract terms. Many payers have a specific process for pricing disputes. Keep a log of the issue, the representative, and the reference number. If a payer loaded a fee schedule incorrectly, the fix can recover payment for many claims at once.",
       "## Negotiating better rates",
       "If allowed amounts are simply too low, the answer is contract negotiation. Come prepared with your volume, quality data, and what the payer pays you compared to other payers. Contracts often have renewal or notice dates, so track them.",
-      "Pricing questions often require a call to the payer's provider services line. GreenLine Voice can make those calls to ask how a claim was priced, giving your team the details to dispute an underpayment.",
+      "Pricing questions often require a call to the payer's provider services line. Greenline Voice can make those calls to ask how a claim was priced, giving your team the details to dispute an underpayment.",
     ],
   },
   {
@@ -435,7 +435,7 @@ export const postsB: Post[] = [
       "Your NPPES record is public and searchable, and payers and other providers use it. Update it when your practice address, phone, or taxonomy changes. Mismatches between NPPES, your payer enrollment records, and your claims are a frequent cause of claim rejections and credentialing delays. Common problems include using the individual NPI where the group NPI belongs, an outdated taxonomy code, or an old service location.",
       "## The NPI in day-to-day billing",
       "On a professional claim, the billing provider is often the group's Type 2 NPI, and the rendering provider is the individual's Type 1 NPI. Referring and ordering providers may also be listed. Getting these right, and matching them to what each payer has on file, prevents many avoidable denials.",
-      "When a claim rejects for a provider identifier mismatch, a call to the payer can confirm what they have on file. GreenLine Voice can make those calls as part of credentialing and enrollment follow-up.",
+      "When a claim rejects for a provider identifier mismatch, a call to the payer can confirm what they have on file. Greenline Voice can make those calls as part of credentialing and enrollment follow-up.",
     ],
   },
   {
@@ -463,7 +463,7 @@ export const postsB: Post[] = [
       "If no records were requested, ask about the expected timeline and set a follow-up date. Claims can sit in review longer than they should, and periodic status checks keep them visible.",
       "## Preventing future reviews",
       "You cannot avoid medical review entirely, but you can reduce how often it happens and how long it takes. Track which services and payers trigger reviews most. Improve documentation templates for those services. Confirm authorizations are on file and match the claim. And designate someone to own incoming records requests so deadlines are never missed. A claim pending review because records never arrived will usually end in a denial that was entirely avoidable.",
-      "Status checks on pended claims are repetitive and phone-heavy. GreenLine Voice can call payers to find out whether a pended claim is waiting on records, and what was requested, so your team can respond before the deadline.",
+      "Status checks on pended claims are repetitive and phone-heavy. Greenline Voice can call payers to find out whether a pended claim is waiting on records, and what was requested, so your team can respond before the deadline.",
     ],
   },
   {
@@ -494,7 +494,7 @@ export const postsB: Post[] = [
       "- Minimum necessary data. The agent should request and record only the information needed for the task, and protect recordings and transcripts.",
       "## Where this is heading",
       "The most likely outcome is not that payers ban automation outright, but that norms and rules emerge for how automated callers identify themselves and interact with payer lines, along with more investment in electronic transactions that make many calls unnecessary. Providers and vendors that adopt transparent practices now will be in a better position as those norms develop.",
-      "At GreenLine Voice, we believe automation should make payer calls more efficient for both sides, which means disclosing the agent, respecting payer policies, and keeping humans in the loop.",
+      "At Greenline Voice, we believe automation should make payer calls more efficient for both sides, which means disclosing the agent, respecting payer policies, and keeping humans in the loop.",
     ],
   },
 ];

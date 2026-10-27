@@ -293,7 +293,7 @@ export function Faq({
 
 export function CTA({
   title = "Put your payer calls on autopilot.",
-  body = "See GreenLine Voice handle your real workflows in a 30-minute demo.",
+  body = "See Greenline Voice handle your real workflows in a 30-minute demo.",
 }: {
   title?: string;
   body?: string;
