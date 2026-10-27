@@ -18,6 +18,9 @@
   .btn-primary { @apply btn-green; }
   .btn-dark { @apply btn-green; }
   .btn-ghost { @apply btn border border-gl-border bg-white/60 text-ink hover:border-leaf hover:text-leaf; }
+  /* On-dark variants (video hero): green pill with a soft glow, and a frosted-glass ghost. */
+  .btn-glow { @apply btn text-white bg-gradient-to-b from-gl-green to-forest-600 shadow-[0_0_0_1px_rgba(121,227,157,.3),0_12px_32px_-10px_rgba(23,198,79,.7)] hover:-translate-y-0.5 hover:brightness-110 hover:shadow-[0_0_0_1px_rgba(121,227,157,.55),0_18px_44px_-10px_rgba(23,198,79,.9)]; }
+  .btn-glass { @apply btn border border-white/25 bg-white/10 text-white backdrop-blur-md hover:-translate-y-0.5 hover:border-white hover:bg-white hover:text-ink; }
   .eyebrow { @apply inline-flex items-center gap-2 text-base font-normal text-gl-gray; }
   .eyebrow-dark { @apply inline-flex items-center gap-2 text-base font-normal text-white/60; }
   .section { @apply py-20 md:py-28; }
@@ -31,6 +34,8 @@
   /* Greenline "ai-gradient-text": black word with a rainbow sweep overlaid. Needs data-text equal to the content. */
   .ai-gradient-text { @apply relative inline-block; }
   .ai-gradient-text::after { content: attr(data-text); @apply pointer-events-none absolute inset-0 animate-sweep opacity-0; background: linear-gradient(270deg, #121212 0%, #0659F7 6%, #FBB726 21%, #FD7C0F 49%, #DD5E79 65%, #B46FB3 80%, #121212 100%); background-size: 300% 100%; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  /* Same sweep for white words on dark backgrounds: fades in and out from white instead of black. */
+  .ai-gradient-text-light::after { background-image: linear-gradient(270deg, #FFFFFF 0%, #79E39D 8%, #FBB726 24%, #FD7C0F 49%, #DD5E79 65%, #B46FB3 80%, #FFFFFF 100%); }
   .prose-gg p { @apply mb-5 leading-relaxed text-ink/80; }
   .prose-gg h2 { @apply mt-10 mb-4 text-2xl font-medium; }
   .prose-gg ul { @apply mb-5 list-disc pl-6 text-ink/80 space-y-2; }

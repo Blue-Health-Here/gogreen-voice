@@ -29,7 +29,7 @@ export function Header() {
 
   return (
     <header ref={ref} className="sticky top-0 z-50 px-3 pt-3 sm:pt-5">
-      <div className={`mx-auto flex h-[60px] max-w-6xl items-center justify-between gap-6 rounded-[35px] border border-gl-border pl-5 pr-1.5 backdrop-blur-[25px] transition ${scrolled ? "bg-white/80 shadow-card" : "bg-white/60"}`}>
+      <div className={`mx-auto flex h-[60px] max-w-6xl items-center justify-between gap-6 rounded-[35px] border border-gl-border pl-5 pr-1.5 backdrop-blur-[25px] transition ${scrolled ? "bg-white shadow-card" : "bg-white"}`}>
         <Logo />
         <nav className="hidden lg:flex items-center gap-1" aria-label="Main">
           {nav.map((g) => {

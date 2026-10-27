@@ -70,58 +70,74 @@ export default function Home() {
   return (
     <>
       {/* HERO */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 grid-bg [mask-image:radial-gradient(ellipse_at_top,black,transparent_70%)]" />
-        <div className="absolute -left-40 top-20 h-96 w-96 rounded-full bg-mint/60 blur-3xl" />
-        <div className="container relative grid items-center gap-12 pt-14 pb-20 md:pt-20 lg:grid-cols-[1.05fr_1fr]">
+      {/* Pulled up under the floating header (72px / 80px tall) so the video fills the viewport. */}
+      <section className="relative -mt-[72px] flex min-h-[100svh] items-center overflow-hidden sm:-mt-20">
+        {/* Background video: Pexels #8657330, pharmacist on the phone. */}
+        <video
+          className="absolute inset-0 h-full w-full object-cover"
+          src="/videos/hero-pharmacist.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          aria-hidden="true"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/35 to-cream/10" />
+        {/* <div className="absolute inset-0 grid-bg [mask-image:radial-gradient(ellipse_at_top,black,transparent_50%)]" /> */}
+        {/* <div className="absolute -left-40 top-20 h-96 w-96 rounded-full bg-mint/60 blur-3xl" /> */}
+        <div className="container relative grid items-center gap-12 pt-32 pb-24 md:pt-36 lg:grid-cols-[1.05fr_1fr]">
           <HeroIntro>
             <HeroLine>
-              <span className="eyebrow">
-                <span className="h-1.5 w-1.5 rounded-full bg-gl-green animate-pulse" />{" "}
+              <span className="eyebrow rounded-full border border-white/15 bg-white/10 px-3.5 py-1.5 text-sm text-white/85 backdrop-blur-md">
+                <span className="h-1.5 w-1.5 rounded-full bg-gl-green shadow-[0_0_8px_2px_rgba(23,198,79,.7)] animate-pulse" />{" "}
                 Voice AI for revenue cycle
               </span>
             </HeroLine>
             <HeroLine>
-              <h1 className="mt-4 text-5xl font-medium leading-[0.9] tracking-[-.05em] sm:text-6xl lg:text-7xl">
+              <h1 className="mt-5 text-5xl text-white font-medium leading-[0.9] tracking-[-.05em] [text-shadow:0_2px_24px_rgba(0,0,0,.35)] sm:text-6xl lg:text-7xl">
                 Let AI wait on hold{" "}
-                <span data-text="for you." className="ai-gradient-text">
+                <span data-text="for you." className="ai-gradient-text ai-gradient-text-light">
                   for you.
                 </span>
               </h1>
             </HeroLine>
             <HeroLine>
-              <p className="lead mt-6 max-w-xl">
+              <p className="lead mt-6 max-w-xl text-white/80">
                 Greenline Voice agents call payers for benefits, authorizations,
                 claims and enrollment, then send structured answers back to your
                 systems. Your team handles the exceptions.
               </p>
             </HeroLine>
             <HeroLine className="mt-8 flex flex-wrap gap-3">
-              <Link href="/demo" className="btn-dark">
-                Book a demo <Arrow className="h-4 w-4" />
+              <Link href="/demo" className="btn-glow group">
+                Book a demo{" "}
+                <Arrow className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
               </Link>
-              <Link href="#listen" className="btn-ghost">
+              <Link href="#listen" className="btn-glass">
                 <Phone className="h-4 w-4" /> Hear a call
               </Link>
             </HeroLine>
-            <HeroLine className="mt-10 flex flex-wrap gap-x-6 gap-y-2 text-sm text-ink/60">
+            <HeroLine className="mt-10 flex flex-wrap gap-x-6 gap-y-2 text-sm text-white/70">
               <span className="flex items-center gap-2">
-                <Shield className="h-4 w-4 text-leaf" /> BAA with every customer
+                <Shield className="h-4 w-4 text-lime" /> BAA with every customer
               </span>
               <span className="flex items-center gap-2">
-                <Bolt className="h-4 w-4 text-leaf" /> Live in weeks, not
+                <Bolt className="h-4 w-4 text-lime" /> Live in weeks, not
                 quarters
               </span>
             </HeroLine>
           </HeroIntro>
           <PopIn className="relative">
-            <div className="absolute -inset-6 -z-10 rounded-[3rem] bg-forest/5" />
-            <ProductMock />
+            <div className="absolute -inset-6 -z-10 rounded-[3rem] border border-white/10 bg-white/5 backdrop-blur-sm" />
+            <div className="shadow-[0_30px_80px_-20px_rgba(0,0,0,.6)] rounded-xl">
+              <ProductMock />
+            </div>
             <Float
               className="absolute -bottom-8 -left-4 hidden sm:block"
               delay={0.5}
             >
-              <div className="rounded-2xl bg-forest p-4 text-cream shadow-glow">
+              <div className="rounded-2xl bg-forest p-4 text-cream ring-1 ring-white/15 shadow-[0_0_0_1px_rgba(31,164,99,.35),0_20px_50px_-15px_rgba(23,198,79,.55)]">
                 <p className="text-[11px] uppercase tracking-wider text-lime">
                   Call complete
                 </p>
@@ -131,7 +147,7 @@ export default function Home() {
               </div>
             </Float>
             <Float className="absolute -right-6 -top-10 hidden md:block">
-              <div className="flex items-center gap-1 rounded-full bg-white py-1 pl-1 pr-4 shadow-card">
+              <div className="flex items-center gap-1 rounded-full bg-white py-1 pl-1 pr-4 shadow-[0_16px_40px_-12px_rgba(0,0,0,.5)]">
                 <LottieAnim name="voice-pulse" className="h-14 w-14" />
                 <span className="text-xs font-semibold">
                   Agent on hold
