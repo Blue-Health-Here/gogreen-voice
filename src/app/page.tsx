@@ -1,12 +1,12 @@
 import Link from "next/link";
 import { CallDemo } from "@/components/CallDemo";
-import { ProductMock } from "@/components/ProductMock";
+// import { ProductMock } from "@/components/ProductMock";
 import { LottieAnim } from "@/components/LottieAnim";
 import {
-  Float,
+  // Float,
   HeroIntro,
   HeroLine,
-  PopIn,
+  // PopIn,
   Reveal,
   Stagger,
   StaggerItem,
@@ -128,6 +128,7 @@ export default function Home() {
               </span>
             </HeroLine>
           </HeroIntro>
+          {/* Right-side product mockup hidden for now; uncomment to restore.
           <PopIn className="relative">
             <div className="absolute -inset-6 -z-10 rounded-[3rem] border border-white/10 bg-white/5 backdrop-blur-sm" />
             <div className="shadow-[0_30px_80px_-20px_rgba(0,0,0,.6)] rounded-xl">
@@ -158,7 +159,7 @@ export default function Home() {
                 </span>
               </div>
             </Float>
-          </PopIn>
+          </PopIn> */}
         </div>
       </section>
 
